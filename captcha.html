@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let a = prompt("length of password");
+        console.log(a);
+
+        let number= confirm("Do you need a number")
+        console.log(number);
+        let caps= confirm("Do you need a captial letter")
+        console.log(caps);
+        let small= confirm("Do you need a Small Letter")
+        console.log(small);
+        let symbol= confirm("Do you need a Symbol")
+        console.log(symbol);
+
+
+
+
+
+        const capsalpha=["A" ,"B" ,"C" ,"D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R" ,"S" ,"T" ,"U", "V", "W" ,"X", "Y", "Z",]
+        const smallalpha=["a" ,"b" ,"c" ,"d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r" ,"s" ,"t" ,"u", "v", "w" ,"x", "y", "z",]
+        const num=["1", "2", "3", "4","5","6","7","8","9", "0",]
+        const smy=['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '=', '+', '[', ']', '{', '}', '\\', '|', ';', ':', '"', "'", ',', '.', '/', '<', '>', '?'];
+
+
+        let password=""
+        for(let index = 0; index<2; index++) {
+
+            
+            let capsalphaIndex = Math.floor
+            (Math.random() *capsalpha.length)
+            ;
+            let smallalphaIndex = Math.floor
+            (Math.random() *smallalpha.length)
+            ;
+            let numIndex = Math.floor
+            (Math.random() *num.length);
+            let smyIndex = Math.floor
+            (Math.random () *smy.length)
+
+            password=password+num[numIndex]+capsalpha[capsalphaIndex]+smallalpha[smallalphaIndex]+smy[smyIndex]
+        }
+        let b = prompt(password)
+        
+        
+        
+        
+    </script>
+</body>
+</html>
